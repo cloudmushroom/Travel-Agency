@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travel Agency</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!--Navigation bar-->
+    <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html"
+          ><img src="./Resursi/logo_1.jpg" alt="" width="80px"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarResponsive"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav" ml-auto>
+            <li class="nav-item">
+              <a href="#" class="nav-link active">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Destinations</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Booking</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!--Video-->
+    <div style="width: 100%; height: 600px; overflow: hidden">
+      <video loop="loop" style="width: 100%" autoplay loop muted>
+        <source
+          src="./Introducing Inspiring Travel Company.mp4"
+          type="video/webm"
+        />
+      </video>
+    </div>
+    <!--Container Text-->
+    <div class="container-fluid padding">
+      <div class="row welcome text-center">
+        <div class="col-12">
+          <h1 class="display-4">What We Offer</h1>
+
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+      </div>
+    </div>
+    <!--Icons-->
+    <div class="container-fluid padding">
+      <div class="row text-center padding">
+        <div class="col-xs-12 col-sm-6 col-md-3">
+          <img src="./Resursi/flight.png" alt="" width="80px" />
+          <h3>Amazing Travel</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <a href="#" style="font-style: italic; color: black">Read More</a>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-3">
+          <img src="./Resursi/globe.png" alt="" width="80px" />
+          <h3>Discover</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <a href="#" style="font-style: italic; color: black">Read More</a>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-3">
+          <img src="./Resursi/flag.png" alt="" width="80px" />
+          <h3>Book Your Trip</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <a href="#" style="font-style: italic; color: black">Read More</a>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-3">
+          <img src="./Resursi/support.png" alt="" width="80px" />
+          <h3>Nice Support</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <a href="#" style="font-style: italic; color: black">Read More</a>
+        </div>
+      </div>
+      <hr class="my-4" />
+    </div>
+    <!--Background image with upload-->
+    <!--<div style="width: 100%; overflow: hidden">
+      <img src="./Resursi/contest_image1.jpg" alt="" />
+    </div>-->
+
+    <div id="slides" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./Resursi/contest_image1.jpg" alt="" />
+          <div class="carousel-caption">
+            <h3 class="display-5 text-dark">UPLOAD PHOTO AND WIN A PRIZE</h3>
+            <p class="text-dark">
+              Upload Your photo from most interesting destinations and get a
+              chance to win a prize.
+            </p>
+            <button
+              class="btn btn-default btn-transparent border border-dark"
+              type="button"
+            >
+              Details
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Top Destionations Title-->
+    <div class="container-fluid padding">
+      <div class="row text-center">
+        <div class="col-12">
+          <h2>TOP DESTINATIONS</h2>
+        </div>
+      </div>
+    </div>
+
+    <!--3 Images-->
+
+    <div class="container">
+      <div class="row text-center">
+        <div class="col-md-4">
+          <img src="/Resursi/paris.jpg" alt="" />
+        </div>
+        <div class="col-md-4">
+          <img src="/Resursi/paris.jpg" alt="" />
+        </div>
+        <div class="col-md-4">
+          <img src="/Resursi/paris.jpg" alt="" />
+        </div>
+      </div>
+      <hr class="my-4" />
+    </div>
+
+    <!--Travel planning advice-->
+    <div class="container-fluid padding">
+      <div class="row text-center padding">
+        <div class="col-md-12">
+          <h2>TRAVEL PLANNING ADVICE FOR EVERYONE</h2>
+        </div>
+      </div>
+      <div class="row padding">
+        <div class="col-lg-6">
+          <p>
+            You are going on a holiday! Or planning to take one. Awesome and
+            exciting news, but now what? There is so much information out there
+            these days. Between Pinteres, Instagram, travel blogs, youtube and
+            review sites like TripAdvisor, travel planning can get overwhelming
+            fast. While having access to millions of pieces of valuable
+            information is great, sometimes it's too much.
+          </p>
+          <p>For more information visit our <a href="#">Blog</a>.</p>
+        </div>
+        <div class="col-lg-6">
+          <img src="./Resursi/travel_blog.jpeg" class="img-fluid" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <!--Footer-->
+    <footer class="page-footer font-small blue">
+      <!-- Copyright -->
+      <div class="footer-copyright text-center py-3">
+        © SmartInIt 2020 |
+        <a href="index.html" style="font-style: italic"> Home</a> |
+        <a href="#" style="font-style: italic">Privacy Policy</a> |
+        <a href="#" style="font-style: italic">Contact Support</a>
+      </div>
+      <!-- Copyright -->
+    </footer>
+  </body>
+</html>
