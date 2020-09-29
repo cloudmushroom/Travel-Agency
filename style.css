@@ -1,11 +1,13 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
-
 /*---Media Queries --*/
 @media (max-width: 992px) {
 }
 @media (max-width: 768px) {
 }
 @media (max-width: 576px) {
+}
+
+* {
+  box-sizing: border-box;
 }
 
 /*---Firefox Bug Fix --*/
@@ -50,8 +52,79 @@ figure {
   padding: 1rem;
 }
 
+.navbar-nav li {
+  padding-right: 10px;
+}
+
+.carousel-inner img {
+  border-top: #f2a463 3px solid;
+  width: 100%;
+  height: 100%;
+}
+
+.carousel-caption {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-100%);
+}
+
+.padding {
+  padding-bottom: 1rem;
+}
+
+.welcome {
+  width: 75%;
+  margin: 0 auto;
+  padding-top: 1rem;
+}
+
+.welcome h1 {
+  color: #f2a463;
+}
+
+h2 {
+  color: #f2a463;
+}
+
+/* 3 Slike */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: '';
+  clear: both;
+  display: table;
+}
+
+.footer {
+  background-color: #f2a463;
+  font-style: italic;
+}
+
+.footer a {
+  color: blueviolet;
+}
+
+.worldTravel img {
+  width: 100%;
+  height: 500px;
+}
+
+.row img {
+  display: inline-block;
+}
+
+.jumbotron {
+  background-color: lightyellow;
+}
+
 hr.my-4 {
-  border: 1px solid coral;
+  border-top: 2px solid #f2a463;
+  width: 93%;
 }
 
 /*

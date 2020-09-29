@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Travel Agency</title>
+    <title>Home</title>
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
@@ -29,9 +29,9 @@
   </head>
   <body>
     <!--Navigation bar-->
-    <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+    <nav class="navbar navbar-expand-md navbar-light bg-white">
       <div class="container-fluid">
-        <a class="navbar-brand" href="index.html"
+        <a class="navbar-brand" href="home.html"
           ><img src="./Resursi/logo_1.jpg" alt="" width="80px"
         /></a>
         <button
@@ -42,13 +42,17 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav" ml-auto>
+        <div class="navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a href="#" class="nav-link active">Home</a>
+              <a
+                href="home.html"
+                class="btn btn-default btn-transparent border border-dark"
+                >Home</a
+              >
             </li>
             <li class="nav-item">
-              <a href="#" class="nav-link">About Us</a>
+              <a href="about.html" class="nav-link">About Us</a>
             </li>
             <li class="nav-item">
               <a href="#" class="nav-link">Destinations</a>
@@ -117,12 +121,8 @@
           <a href="#" style="font-style: italic; color: black">Read More</a>
         </div>
       </div>
-      <hr class="my-4" />
     </div>
-    <!--Background image with upload-->
-    <!--<div style="width: 100%; overflow: hidden">
-      <img src="./Resursi/contest_image1.jpg" alt="" />
-    </div>-->
+    <!--Background image with upload text-->
 
     <div id="slides" class="carousel slide" data-ride="carousel">
       <div class="carousel-inner">
@@ -134,12 +134,13 @@
               Upload Your photo from most interesting destinations and get a
               chance to win a prize.
             </p>
-            <button
+            <a
+              href="gallery.html"
               class="btn btn-default btn-transparent border border-dark"
               type="button"
             >
               Details
-            </button>
+            </a>
           </div>
         </div>
       </div>
@@ -197,15 +198,13 @@
     </div>
 
     <!--Footer-->
-    <footer class="page-footer font-small blue">
+    <footer class="footer">
       <!-- Copyright -->
       <div class="footer-copyright text-center py-3">
         © SmartInIt 2020 |
-        <a href="index.html" style="font-style: italic"> Home</a> |
-        <a href="#" style="font-style: italic">Privacy Policy</a> |
-        <a href="#" style="font-style: italic">Contact Support</a>
+        <a href="home.html"> Home</a> | <a href="#">Privacy Policy</a> |
+        <a href="#">Contact Support</a>
       </div>
-      <!-- Copyright -->
     </footer>
   </body>
 </html>
