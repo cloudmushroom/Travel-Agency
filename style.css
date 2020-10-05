@@ -2,8 +2,14 @@
 @media (max-width: 992px) {
 }
 @media (max-width: 768px) {
+  .centered {
+    font-size: 10px;
+  }
 }
 @media (max-width: 576px) {
+  .centered {
+    font-size: 10px;
+  }
 }
 
 * {
@@ -59,7 +65,7 @@ figure {
 .carousel-inner img {
   border-top: #f2a463 3px solid;
   width: 100%;
-  height: 100%;
+  height: 500px;
 }
 
 .carousel-caption {
@@ -101,6 +107,7 @@ h2 {
 }
 
 .footer {
+  width: 100%;
   background-color: #f2a463;
   font-style: italic;
 }
@@ -111,15 +118,60 @@ h2 {
 
 .worldTravel img {
   width: 100%;
-  height: 500px;
+  height: 500px auto;
 }
 
 .row img {
   display: inline-block;
 }
 
-.jumbotron {
-  background-color: lightyellow;
+.jumbotron-fluid {
+  background-color: rgb(253, 253, 155);
+}
+
+#london-caption {
+  position: absolute;
+  top: 80%;
+  transform: translateY(-50%);
+}
+
+.btn-warning {
+  color: #ffffff;
+  background-color: #f2a463;
+}
+
+#contactImg {
+  width: 100%;
+  height: 500px auto;
+  border-top: 2px solid #f2a463;
+}
+
+.wrapper {
+  position: relative;
+  text-align: center;
+  color: black;
+}
+
+#galleryImg {
+  width: 100%;
+  height: 500px;
+  border-top: 2px solid #f2a463;
+}
+
+.centered {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/*
+.image-upload > input {
+  display: none;
+}*/
+
+h5 {
+  color: #f2a463;
 }
 
 hr.my-4 {

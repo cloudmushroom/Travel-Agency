@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Gallery</title>
+    <title>Blog</title>
+
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
@@ -26,6 +27,26 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="style.css" />
+    <style>
+      body,
+      html {
+        height: 100%;
+        margin: 0;
+      }
+
+      .bg {
+        /* The image used */
+        background-image: url('./Resursi/under_construction.jpg');
+
+        /* Responsive height */
+        height: 40vw;
+
+        /* Center and scale the image nicely */
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+    </style>
   </head>
   <body>
     <!--Navigation bar-->
@@ -57,14 +78,14 @@
               <a href="#" class="nav-link">Booking</a>
             </li>
             <li class="nav-item">
-              <a
-                href="gallery.html"
-                class="btn btn-default btn-transparent border border-dark"
-                >Gallery</a
-              >
+              <a href="gallery.html" class="nav-link">Gallery</a>
             </li>
             <li class="nav-item">
-              <a href="blog.html" class="nav-link">Blog</a>
+              <a
+                href="blog.html"
+                class="btn btn-default btn-transparent border border-dark"
+                >Blog</a
+              >
             </li>
             <li class="nav-item">
               <a href="contact.html" class="nav-link">Contact</a>
@@ -74,49 +95,8 @@
       </div>
     </nav>
 
-    <!--Gallery image-->
-    <div class="wrapper">
-      <img id="galleryImg" src="./Resursi/contest_image.jpg" alt="" />
-      <div class="centered">
-        <h4 class="text-uppercase text-secondary">
-          Upload photo and win a prize
-        </h4>
-        <p class="text-secondary">
-          Upload Your photo from the most interesting destinations and get a
-          chance to win a prize.
-        </p>
-        <br />
-        <p class="text-secondary">
-          You can win Travel for two persons and many other prizes.
-        </p>
-      </div>
-    </div>
-
-    <div class="container">
-      <div class="row">
-        <div class="col-md-3">
-          <img src="./Resursi/paris.jpg" alt="" width="200" />
-        </div>
-        <div class="col-md-3">
-          <img src="./Resursi/paris.jpg" alt="" width="200" />
-        </div>
-        <div class="col-md-3">
-          <img src="./Resursi/paris.jpg" alt="" width="200" />
-        </div>
-        <div class="col-md-3">
-          <img src="./Resursi/paris.jpg" alt="" width="200" />
-        </div>
-        
-        <!--<div class="image-upload">
-          <label for="file-input">
-            <img src="./Resursi/upload_photo.png" width="100" />
-          </label>
-          <input id="file-input" type="file" />-->
-
-        </div>
-      </div>
-    </div>
-
+    <!--Image under construction-->
+    <div class="bg"></div>
     <!--Footer-->
     <footer class="footer">
       <!-- Copyright -->

@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Gallery</title>
+    <title>Contact</title>
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
@@ -57,65 +57,78 @@
               <a href="#" class="nav-link">Booking</a>
             </li>
             <li class="nav-item">
-              <a
-                href="gallery.html"
-                class="btn btn-default btn-transparent border border-dark"
-                >Gallery</a
-              >
+              <a href="gallery.html" class="nav-link">Gallery</a>
             </li>
             <li class="nav-item">
               <a href="blog.html" class="nav-link">Blog</a>
             </li>
             <li class="nav-item">
-              <a href="contact.html" class="nav-link">Contact</a>
+              <a
+                href="contact.html"
+                class="btn btn-default btn-transparent border border-dark"
+                >Contact</a
+              >
             </li>
           </ul>
         </div>
       </div>
     </nav>
+    <!--Contact image-->
 
-    <!--Gallery image-->
-    <div class="wrapper">
-      <img id="galleryImg" src="./Resursi/contest_image.jpg" alt="" />
-      <div class="centered">
-        <h4 class="text-uppercase text-secondary">
-          Upload photo and win a prize
-        </h4>
-        <p class="text-secondary">
-          Upload Your photo from the most interesting destinations and get a
-          chance to win a prize.
-        </p>
-        <br />
-        <p class="text-secondary">
-          You can win Travel for two persons and many other prizes.
-        </p>
-      </div>
-    </div>
+    <img id="contactImg" src="./Resursi/Contact_Us.jpg" alt="" />
 
+    <!--Contact Form-->
     <div class="container">
       <div class="row">
-        <div class="col-md-3">
-          <img src="./Resursi/paris.jpg" alt="" width="200" />
+        <div class="col-sm-6">
+          <h2 class="text-uppercase">Contact Us</h2>
+          <p class="text-italic">
+            We are here to anwser any questions you may have. Reach out to us
+            and we'll respond as soon as we can.
+          </p>
+          <h5 class="text-uppercase">Email</h5>
+          <p>info@someemail.com</p>
+          <h5 class="text-uppercase">Adress</h5>
+          <p>Laze Nancica 7</p>
+          <p>Novi Sad</p>
+          <h5 class="text-uppercase">Phone</h5>
+          <p>+38165/123-45-67</p>
         </div>
-        <div class="col-md-3">
-          <img src="./Resursi/paris.jpg" alt="" width="200" />
-        </div>
-        <div class="col-md-3">
-          <img src="./Resursi/paris.jpg" alt="" width="200" />
-        </div>
-        <div class="col-md-3">
-          <img src="./Resursi/paris.jpg" alt="" width="200" />
-        </div>
-        
-        <!--<div class="image-upload">
-          <label for="file-input">
-            <img src="./Resursi/upload_photo.png" width="100" />
-          </label>
-          <input id="file-input" type="file" />-->
+        <div class="col-sm-6">
+          <form>
+            <div class="form-group">
+              <input
+                type="text"
+                class="form-control"
+                id="validationCustom01"
+                placeholder="Name"
+              />
+            </div>
+            <div class="form-group">
+              <input
+                type="email"
+                class="form-control"
+                id="exampleFormControlInput1"
+                placeholder="Your Email"
+              />
+            </div>
 
+            <div class="form-group">
+              <textarea
+                class="form-control"
+                id="exampleFormControlTextarea1"
+                rows="8"
+                placeholder="Write something..."
+              ></textarea>
+            </div>
+            <button type="submit" class="btn btn-warning">Submit</button>
+          </form>
         </div>
       </div>
     </div>
+
+    <!--Location Map-->
+    <div id="map" style="width: 100%; height: 400px"></div>
 
     <!--Footer-->
     <footer class="footer">
@@ -126,5 +139,21 @@
         <a href="contact.html">Contact Support</a>
       </div>
     </footer>
+
+    <script>
+      function initMap() {
+        // The location of SmartInIt
+        var smartInIt = { lat: 45.247274, lng: 19.823655 };
+        // The map, centered at SmartInIt
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 17,
+          center: smartInIt,
+        });
+        // The marker, positioned at SmartInIt
+        var marker = new google.maps.Marker({ position: smartInIt, map: map });
+      }
+    </script>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBDYDy2PiQmCK9nA3XdPu-KJXc06BwslzE&callback=initMap"></script>
   </body>
 </html>
