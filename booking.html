@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.22/css/jquery.dataTables.css">
+    <script type="text/javascript" charset="utf8"
+        src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.js"></script>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <!--Navigation bar-->
+    <nav class="navbar navbar-expand-md navbar-light bg-white">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="home.html"><img src="./Resursi/logo_1.jpg" alt="" width="80px" /></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a href="home.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="destinations.html" class="nav-link">Destinations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="booking.html" class="btn btn-default btn-transparent border border-dark">Booking</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="gallery.html" class="nav-link">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="blog.html" class="nav-link">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="Booking">
+        <img class="img-fluid" src="./Resursi_3/Travel-GettyImages.jpg" alt="" width="100%" height="500px" />
+    </div>
+
+    <!--Table-->
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <table id="table" class="display" style="width: 100%;">
+                    <thead>
+                        <tr>
+                            <th>Destinations</th>
+                            <th>Starting Date</th>
+                            <th>Duration</th>
+                            <th>Price</th>
+                            <th>Details</th>
+                            <th>Reservations</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-12"><a class="btn btn-warning" href="/reservations.html" id="reservationsBtn" type="button"
+                    style="float: right;">View Reservations</a></div>
+        </div>
+    </div>
+
+    <!--Footer-->
+    <footer class="footer">
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">
+            © SmartInIt 2020 |
+            <a href="home.html"> Home</a> | <a href="#">Privacy Policy</a> |
+            <a href="contact.html">Contact Support</a>
+        </div>
+    </footer>
+
+    <!--City Modal-->
+    <div id="cityModal" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 id="title" class="modal-title">London</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <img class="img-fluid foto" src="" alt="">
+                    <p id="detail">Take a sightseeing tour of London and learn from experts as they show you the city's best
+                        attractions and famous landmarks. Learn interesting historical and cultural facts about London
+                        on a walking tour, a double decker bus tour, a river Thames tour or even a helicopter tour. Book
+                        a one-day hop off bus tour and get an extra 24 hours free.</p>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-default btn-transparent border border-warning" type="button"
+                        data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Reservation Modal -->
+    <div id="reservationModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Make Reservation</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form id="form" role="form">
+                        <div>
+                            <label id="location" for=""></label><br>
+                            <label id="locationPrice" for=""></label>
+                            <input id="destinationName" name="destinationName" type="hidden">
+                            <input id="destinationPrice" name="destinationPrice" type="hidden">
+                            <hr>
+                        </div>
+                        <div class="form-group">
+                            <label for="name">Name:</label>
+                            <input id="name" type="text" name="name" class="form-control" />
+                        </div>
+                        <div class="form-group">
+                            <label for="surname">Surname:</label>
+                            <input id="surname" type="text" name="surname" class="form-control" />
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input id="email" type="email" name="email" class="form-control" />
+                        </div>
+                        <div class="form-group">
+                            <label for="jmbg">JMBG:</label>
+                            <input id="jmbg" type="text" name="jmbg" class="form-control" />
+                        </div>
+                        <div class="form-group">
+                            <label for="note">Note:</label>
+                            <textarea name="note" id="" cols="60" rows="4"
+                                placeholder="Hope that it will be sunny period"></textarea>
+                        </div>
+                        <input id="send" type="button" onclick="makeReservation(this)"
+                            class="btn btn-default btn-transparent border border-warning" value="Send"
+                            style="float: right;">
+                    </form>
+                </div>
+                <div class="modal-footer">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script src="./bookingReservations.js"></script>
+
+</html>

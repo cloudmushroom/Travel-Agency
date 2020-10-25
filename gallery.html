@@ -1,130 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Gallery</title>
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
-      crossorigin="anonymous"
-    />
-    <script
-      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
-      crossorigin="anonymous"
-    ></script>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <!--Navigation bar-->
-    <nav class="navbar navbar-expand-md navbar-light bg-white">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="home.html"
-          ><img src="./Resursi/logo_1.jpg" alt="" width="80px"
-        /></a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarResponsive"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a href="home.html" class="nav-link">Home</a>
-            </li>
-            <li class="nav-item">
-              <a href="about.html" class="nav-link">About Us</a>
-            </li>
-            <li class="nav-item">
-              <a href="destinations.html" class="nav-link">Destinations</a>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link">Booking</a>
-            </li>
-            <li class="nav-item">
-              <a
-                href="gallery.html"
-                class="btn btn-default btn-transparent border border-dark"
-                >Gallery</a
-              >
-            </li>
-            <li class="nav-item">
-              <a href="blog.html" class="nav-link">Blog</a>
-            </li>
-            <li class="nav-item">
-              <a href="contact.html" class="nav-link">Contact</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
 
-    <!--Gallery image-->
-    <div class="wrapper">
-      <img id="galleryImg" src="./Resursi/contest_image.jpg" alt="" />
-      <div class="centered">
-        <h4 class="text-uppercase text-secondary">
-          Upload photo and win a prize
-        </h4>
-        <p class="text-secondary">
-          Upload Your photo from the most interesting destinations and get a
-          chance to win a prize.
-        </p>
-        <br />
-        <p class="text-secondary">
-          You can win Travel for two persons and many other prizes.
-        </p>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gallery</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+    integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!--Navigation bar-->
+  <nav class="navbar navbar-expand-md navbar-light bg-white">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="home.html"><img src="./Resursi/logo_1.jpg" alt="" width="80px" /></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a href="home.html" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="about.html" class="nav-link">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a href="destinations.html" class="nav-link">Destinations</a>
+          </li>
+          <li class="nav-item">
+            <a href="booking.html" class="nav-link">Booking</a>
+          </li>
+          <li class="nav-item">
+            <a href="gallery.html" class="btn btn-default btn-transparent border border-dark">Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a href="blog.html" class="nav-link">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a href="contact.html" class="nav-link">Contact</a>
+          </li>
+        </ul>
       </div>
     </div>
+  </nav>
 
-    <div class="container">
-      <div class="row">
-        <div class="col-md-3">
-          <img src="./Resursi/paris.jpg" alt="" width="200" />
-        </div>
-        <div class="col-md-3">
-          <img src="./Resursi/paris.jpg" alt="" width="200" />
-        </div>
-        <div class="col-md-3">
-          <img src="./Resursi/paris.jpg" alt="" width="200" />
-        </div>
-        <div class="col-md-3">
-          <img src="./Resursi/paris.jpg" alt="" width="200" />
-        </div>
-        
-        <!--<div class="image-upload">
+  <!--Gallery image-->
+  <div class="wrapper">
+    <img class="img-fluid" id="galleryImg" src="./Resursi/contest_image.jpg" alt="" />
+    <div class="centered">
+      <h4 class="text-uppercase text-secondary">
+        Upload photo and win a prize
+      </h4>
+      <p class="text-secondary">
+        Upload Your photo from the most interesting destinations and get a
+        chance to win a prize.
+      </p>
+      <br />
+      <p class="text-secondary">
+        You can win Travel for two persons and many other prizes.
+      </p>
+    </div>
+  </div>
+
+  <!--Gallery-->
+  <div class="container">
+    <div class="row" id="galerija">
+      <div class="col-md-3 imgGallery">
+        <img src="./Resursi/athen.jpg" alt="">
+      </div>
+      <div class="col-md-3 imgGallery">
+        <img src="./Resursi/paris.jpg" alt="">
+      </div>
+      <div class="col-md-3 imgGallery">
+        <img src="./Resursi/quiske.jpg" alt="">
+      </div>
+      <div class="col-md-3 imgGallery">
+        <img src="./Resursi/newyork.jpg" alt="">
+      </div>
+      <div class="col-md-3 imgGallery">
+        <img src="./Resursi/venice.jpg" alt="">
+      </div>
+    </div>
+    
+    <!--Logo-->
+    <div class="row">
+      <div class="col-md-12">
+        <div class="image-upload">
           <label for="file-input">
-            <img src="./Resursi/upload_photo.png" width="100" />
+            <img src="./Resursi/upload_photo.png" width="100px" />
           </label>
-          <input id="file-input" type="file" />-->
 
+          <input id="file-input" type="file" onchange="loadFile(event)" />
         </div>
       </div>
     </div>
+  </div>
 
-    <!--Footer-->
-    <footer class="footer">
-      <!-- Copyright -->
-      <div class="footer-copyright text-center py-3">
-        © SmartInIt 2020 |
-        <a href="home.html"> Home</a> | <a href="#">Privacy Policy</a> |
-        <a href="contact.html">Contact Support</a>
-      </div>
-    </footer>
-  </body>
+  <!--Footer-->
+  <footer class="footer">
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">
+      © SmartInIt 2020 |
+      <a href="home.html"> Home</a> | <a href="#">Privacy Policy</a> |
+      <a href="contact.html">Contact Support</a>
+    </div>
+  </footer>
+
+  <script src="/fileUpload.js">
+  </script>
+</body>
+
 </html>
